@@ -1,0 +1,22 @@
+<div ng-controller="appController as store">
+  <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{store.personne.image}}">
+          <span class="card-title">{{store.personne.name + ' ' +store.personne.age + ' ans'}}</span>
+        </div>
+        <div class="card-content">
+          <ul>
+            <li ng-repeat="skill in store.personne.skills">
+              {{skill}}
+            </li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <a href="#/test">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
